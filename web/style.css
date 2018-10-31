@@ -1,0 +1,137 @@
+h1 {
+		font-family:Edwardian Script ITC;
+                font-size:380%;
+                text-align: left;
+		color: white;
+                margin-left:2%;
+}
+h4 {
+    color: #800080;
+    text-align: center; 
+    font-size:120%;
+}
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: white;
+	        
+}
+#nav ul {
+	list-style: none;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0; }
+#nav li {
+	float: left; }
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #800080;
+	border-right: 1px solid  #800080; }
+
+#nav li a:hover {
+	color: white;
+	background-color: #EE82EE; }
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size:150%;
+    font-family:Arial;
+    margin-top:4%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer {
+    width:100%;
+    background: #800080;
+    height:5%;
+    color:white;
+    margin-top:14%;
+}
+h3 {
+    font-family:Times New Roman;
+    font-size:250%;
+    text-align: center;
+    color: #800080;
+}
+.left {
+    border-radius: 25px;
+    background:#f2f2f2;
+    float:left;
+    width:25%;
+    margin-left:10%;
+    box-shadow: 10px 10px 5px grey;
+}
+.middle {
+    border-radius: 25px;
+    background:#f2f2f2;
+    float:center;
+    width:25%;
+    margin-left:37%;
+    box-shadow: 10px 10px 5px grey;
+}
+.right {
+    border-radius: 25px;
+    background:#f2f2f2;
+    float:right;
+    width:25%;
+    margin-top:-25%;
+    margin-right:11%;
+    box-shadow: 10px 10px 5px grey;
+}
+.a {
+    width:100%;
+    border:solid 1px #ccc;
+    background:#800080;
+}
+.c {
+    width:100%;
+    max-width:50%;
+    
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #800080;
+    color: white;
+    border:1px solid white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #800080;
+    color: white;
+    border:1px solid white;
+}
+.fa-instagram{
+    background: #800080;
+    color: white;
+    border:1px solid white;
+}
+.fa-youtube{
+    background: #800080;
+    color: white;
+    border:1px solid white;
+}

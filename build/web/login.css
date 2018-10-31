@@ -1,0 +1,24 @@
+.login {
+    width:100%;
+    background:#f2f2f2;
+    color:#696969;
+    height:50%;
+    
+}
+h5{
+    font-size:200%;
+    vertical-align: middle;
+    line-height: 70px; 
+}
+.formDiv {
+    width:100%;
+    height:auto;
+    background:red;
+}
+.ui-panelgrid td, .ui-panelgrid tr {
+    background: transparent; 
+    border:transparent;
+}
+.mainGrid { 
+    width:55%; 
+}

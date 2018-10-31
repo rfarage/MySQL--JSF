@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+       xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="login.css"/>
+        <title>Register</title>
+    </h:head>
+    <h:body>
+        <div class="a">
+           <div class="c" style="float:left;"><h1>Company Name</h1></div>
+           <div class="c" style="float:right;">
+               <p style="color:white;text-align: right;">&#9993; example@myemail.com &#128379; +1(511)222-1122 </p>
+               <p style="color:white;text-align: right;">
+                   <a href="http://www.facebook.com" class="fa fa-facebook"></a>
+                   <a href="http://www.twitter.com" class="fa fa-twitter"></a>
+                   <a href="http://www.instagram.com" class="fa fa-instagram"></a>
+                   <a href="http://www.youtube.com" class="fa fa-youtube"></a>
+               </p>
+           </div>
+            <div style="clear:both;"></div>
+        </div>
+        <br/>
+        <div id="nav">
+            <ul>
+		<li><a href="index.xhtml">Home</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Our Service</a></li>
+		<li><a href="#">Contact</a></li>
+		<li><a href="logins.xhtml">Login</a></li>
+            </ul>
+        </div>
+        <br/>
+       
+        <div class="login">
+            <h5>Register</h5>
+            <p style="margin-top: -3%;"><a href="index.xhtml" style="color:#800080;text-decoration:none;">Home</a> / Register </p>
+        </div>
+        <br/>
+        <br/>
+        <h:form id="oneForm">
+            <p:messages id="errors" />
+            <p:growl id="msg"/>
+             <p:panelGrid columns="1" class="mainGrid">
+                 <p:outputLabel style="color:black;" value="First Name" />
+                <p:inputText id="firstName" value="#{registerManager.firstName}" size="50" required="true" requiredMessage="First name must be entered"/>
+                <p:outputLabel style="color:black;" value="Last Name" />
+                <p:inputText id="lastName" value="#{registerManager.lastName}" size="50" required="true" requiredMessage="Last name must be entered"/>
+                <p:outputLabel style="color:black;" value="Username" />
+                <p:inputText id="email" value="#{registerManager.username}" size="50" required="true" requiredMessage="Username must be entered"/>
+                <p:outputLabel style="color:black;" value="Email" />
+                <p:inputText id="emails" value="#{registerManager.email}" size="50" required="true" requiredMessage="Email must be entered"  validator="#{registerManager.validateEmail}"/>
+                <p:outputLabel style="color:black;" value="Password" />
+                <p:inputText id="passwords" type="password" value="#{registerManager.password}" size="50" required="true" requiredMessage="Password must be entered"/>
+                <p:outputLabel style="color:black;" value="Confirm Password" />
+                <p:inputText id="cPassword" type="password" value="#{registerManager.confirmPassword}" size="50" required="true" requiredMessage="Please re-enter password"/>
+                <br/>
+                <p:commandButton id="submit" value="Create Account" action="#{registerManager.registerUser2()}" ajax="false"/>
+             </p:panelGrid>    
+        </h:form>
+        <br/>
+        <div class="footer" style="margin-top:8%;">
+            <p>&copy;2018 Copyrights Reserved| Company Name </p>
+        </div>
+    </h:body>
+</html>
+
